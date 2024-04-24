@@ -1,0 +1,49 @@
+body {
+    background-image: url('../assets/background.jpg');
+    font-family: 'Pangolin', cursive;
+}
+
+.display_inline {
+    display: inline;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#review-container {
+    width: 32em;
+    height: 40em;
+    margin-left: 18.8em;
+    margin-bottom: 1.5em;
+    margin-top: 2em;
+    background: white;
+    padding: 1.5em;
+    border: 2px dashed black;
+    border-radius: 2em;
+}
+
+#submit-btn {
+    background-color: #59a8da;
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 4em;
+    font-weight: 600;
+    margin-left: 1.25em;
+}
+
+#description {
+    width: 25em;
+    height: 8.9em;
+    margin-left: 0.5em;
+    margin-bottom: 1.2em;
+    padding: 0.65em;
+    border-radius: 0.5em;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#photo{
+    margin-left: 9em;
+    margin-bottom: 0.5em;
+}

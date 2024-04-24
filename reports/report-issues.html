@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ideas Abaad - Ahmedabad</title>
+    <link rel="icon" type="image/x-icon" href="../assets/logo.png">
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+        integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+        crossorigin="anonymous"></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+
+    <script type = "text/javascript">  
+        function clickLike(x) {   
+            x.classList.toggle("fa-thumbs-down");
+        }  
+        </script>  
+</head>
+
+<body>
+    <!-- CSS and JS -->
+    <link href="report-issues.css" rel="stylesheet" />
+    <script src="report-issues.js"></script>
+
+    <div class="container">
+
+        <marquee style="background-color: rgb(211, 112, 241); margin-bottom: -1.2em; " >Website Developed By: Aaditya N. Agrawal | Grade: 10th Aryabhatta | Anand Niketan Maninagar</marquee>
+
+        <!-- Heading -->
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 text-center" style="margin-top: 2em;">
+                <img src="../assets/heading-1.png" width="100px" class="display_inline" />
+                <h1 id="heading" class="display_inline"><span style="color: rgba(255,213,66,255);" >Ideas Abaad</span> <span style="color: rgb(137, 192, 83);" >- </span><span style="color: rgb(248, 113, 134);" >Ahmedabad</span></h1>
+                <img src="../assets/heading-2.png" width="100px" class="display_inline" />
+                <br></br><h2 id="instructions" style="color: rgb(219, 3, 3); margin-top: -1.25em; " class="display_inline">Know, Grow, Discuss & Share for Social Welfare</h2>
+            </div>
+        </div>
+
+        <!-- Submit Reports -->
+        <div class="row">
+            <div class="col-sm-50 col-md-50 col-lg-50 text-center" id="review-container">
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                        <h2>Report your issue to us:</h2>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <form>
+                    <label for="fName">First name:</label> <input type="text" id="firstName" class="inputField" maxlength="25" minlength="2" required ><br>
+                    <label for="lName">Last name:</label> <input type="text" id="lastName" class="inputField" maxlength="25" minlength="2" required ><br>
+                    <label for="myfile">Passport Photo:</label><input type="file" class="inputField" accept=".png, .jpg, .jpeg, .svg, .webp" id="photo" required><br>
+                    <label for="email">Email ID:</label><input type="email" id="emailId" class="inputField" required ><br>
+                    <label for="phone">Mobile Number:</label><input type="tel" id="phoneNumber" class="inputField" required ><br>
+                    <label for="birth">Birthdate:</label><input type="date" id="birthdate" class="inputField" max="#" required ><br>
+                    <label for="address">Address:</label><input type="text" id="address" class="inputField" maxlength="200" minlength="15" required ><br>
+                    <label for="pincode">Pincode:</label><input type="number" id="pincode" class="inputField" maxlength="6" minlength="6" ng-required="true"><br>
+                    <label for="pincode">Issue Type: </label> <select id="issueType" class="inputField" required >
+                        <option selected hidden >-Select-</option>
+                        <option value="fraud">Fraud</option>
+                        <option value="harassment">Harassment</option>
+                        <option value="physical">Physical Abuse</option>
+                        <option value="bully">Bullying</option>
+                        <option value="cyber">Cyber Bullying</option>
+                        <option value="threat">Threat</option>
+                      </select><br>
+                    <textarea id="description" class="inputField" placeholder='Describe your issue' maxlength='250' minlength='25' required ></textarea><br>
+                    <input id="submit-btn" type="submit" value="Submit">
+
+                </form>
+                
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
